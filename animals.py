@@ -11,13 +11,14 @@ class Animal(object):
         self.especie=especie
         self.peso=peso
         self.color=color
-    def comunicacion(self,mensaje):
-        return mensaje
+    def comunicacion(self):
+        print("el animal se comunica")
+        
     def desplazamiento(self,desplazamiento):
         self.desplazamiento = desplazamiento
     def alimentacion(self,alimentacion):
         self.alimentacion = alimentacion
-    def habitat(self,habitat):
+    def habitat(self, habitat):
         self.habitat = habitat
 
 class Raza(object):
@@ -54,11 +55,19 @@ class perro(Animal,Raza):
          self.especie=especie
          self.peso=peso
          
+def getNombre(self):
+    return self.nombre
+def getEspecie(self):
+    return self.especie
+def getPeso(self):
+    return self.peso
+def getColor(self):
+    return self.color
 
-#Perro1 =        
+def mostrarAnimal(self):
+    print("\nnombre: "+self.getNombre()+"\nespecie: "+self.getEspecie()+"\npeso: "+self.getPeso()+"\ncolor: "+self.getColor())
 
-
-             
+         
 
           
                     
